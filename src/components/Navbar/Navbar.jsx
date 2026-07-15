@@ -16,12 +16,12 @@ const Navbar = () => {
             Calculator
           </Button>
 
-          <Button color="inherit" onClick={() => navigate("/AgeCalculator")}>
-            Age Calculator
+          <Button color="inherit" onClick={() => navigate("/age-cal")}>
+            Age-Calculator
           </Button>
 
-          <Button color="inherit" onClick={() => navigate("/task")}>
-            Task
+          <Button color="inherit" onClick={() => navigate("/temp-cal")}>
+            Temp-Converter
           </Button>
         </Box>
       </Toolbar>

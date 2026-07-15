@@ -48,7 +48,7 @@ const Calculator = () => {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <Box className="min-h-screen bg-gray-100 flex items-center justify-center">
         <Card className="w-full max-w-md shadow-xl border-2 border-black">
           <CardContent className="flex flex-col gap-4 p-6">
             <Typography
@@ -110,7 +110,7 @@ const Calculator = () => {
             </Box>
           </CardContent>
         </Card>
-      </div>
+      </Box>
     </>
   );
 };

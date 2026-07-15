@@ -42,7 +42,7 @@ const AgeCalculator = () => {
     return (
       <>
         <Navbar />
-        <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+        <Box className="min-h-screen bg-gray-100 flex items-center justify-center">
           <Card className="w-full max-w-md shadow-xl border-2 border-black">
             <CardContent className="flex flex-col gap-4 p-6">
               <Typography
@@ -61,7 +61,7 @@ const AgeCalculator = () => {
                 onChange={(e) => setYear(e.target.value)}
               />
 
-              {emsg && (<Alert severity="error">{emsg}</Alert>)}
+              {emsg && (<Alert severity="error" variant="filled">{emsg}</Alert>)}
 
               <Button variant="contained" color="success" fullWidth onClick={handlecal}>
                 Show Curret age
@@ -76,7 +76,7 @@ const AgeCalculator = () => {
               </Box>
             </CardContent>
           </Card>
-        </div>
+        </Box>
       </>
     );
 };
