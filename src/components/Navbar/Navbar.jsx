@@ -23,6 +23,8 @@ const Navbar = () => {
           <Button color="inherit" onClick={() => navigate("/temp-cal")}>
             Temp-Converter
           </Button>
+
+          <Button color="inherit" onClick={()=>navigate("/hosting")}>Hosting</Button>
         </Box>
       </Toolbar>
     </AppBar>
