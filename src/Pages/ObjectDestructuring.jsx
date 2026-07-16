@@ -52,11 +52,17 @@ const ObjectDestructuring=()=>{
     // console.log("name: ", name);
     // console.log("address: ",address);
 
+
+
     console.log("-----rename the varibale----------");
     const { name: stdname, age: stdage } = studentObject;
     console.log("std name:" ,stdname);
     console.log("std age:",stdage);
 
+
+    console.log("-----chnage the value ----------");
+    // studentObject.name="vikas";
+    // studentObject.address.city="pune";
 
      console.log("-----Providing Default Values----------");
      const {phone="7894152630"} =studentObject;
