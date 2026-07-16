@@ -24,7 +24,12 @@ const Navbar = () => {
             Temp-Converter
           </Button>
 
-          <Button color="inherit" onClick={()=>navigate("/hosting")}>Hosting</Button>
+          <Button color="inherit" onClick={() => navigate("/hosting")}>
+            Hosting
+          </Button>
+          <Button color="inherit" onClick={() => navigate("/objects")}>
+            Object
+          </Button>
         </Box>
       </Toolbar>
     </AppBar>
