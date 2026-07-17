@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 const Hosting = () => {
   const handle = () => {
     // 1. Hoisting with var
-
+    console.log("------------Hoisting with var---------------");
     console.log("var value before declaration:", a);
     var a = 10;
     console.log("var value after declaration:", a);
@@ -14,7 +14,7 @@ const Hosting = () => {
     // 10
 
     // Hoisting with let
-
+    console.log("------------Hoisting with let---------------");
     try {
       console.log(b);
     } catch (error) {
@@ -29,8 +29,8 @@ const Hosting = () => {
     // Cannot access 'b' before initialization
     // 20
 
-    // ==========================================
-    // Hoisting with const
+    
+    console.log("------Hoisting with const-----------"); 
     try {
       console.log(c);
     } catch (error) {
@@ -48,7 +48,7 @@ const Hosting = () => {
     // ==========================================
     // Function Declaration
     // Function declarations are completely hoisted.
-
+    console.log("---------function declarations----------");
     greet();
     console.log(greet);
     function greet() {
@@ -81,9 +81,8 @@ const Hosting = () => {
     // Hello from Function Expression
 
     // ==========================================
-    // Arrow Function
-    // Arrow function behaves like function expression.
-
+    
+    console.log("---------// Arrow Function-------------");
     try {
       add();
     } catch (error) {
@@ -101,8 +100,8 @@ const Hosting = () => {
     // Arrow Function Executed
 
     // ==========================================
-    // Global Scope
-
+    
+    console.log("---------Global Scope--------------");
     var company = "OpenAI";
 
     function showCompany() {
@@ -115,8 +114,8 @@ const Hosting = () => {
     // OpenAI
     //OpenAI
 
-    // ==========================================
-    //  Function Scope
+    
+     console.log("-------Function Scope----------");
 
     function employee() {
       var empName = "Aniket";
@@ -136,7 +135,7 @@ const Hosting = () => {
     // empName is not defined
 
     // ==========================================
-    //  Block Scope
+    console.log("----Block Scope-----"); 
 
     if (true) {
       let city = "Pune";
